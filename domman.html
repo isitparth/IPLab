@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <button id="changeTextButton">Change Text</button>
+    <div id="textDiv">This is some initial text.</div>
+
+    <script>
+        // Get references to the button and div elements by their IDs
+        const changeTextButton = document.getElementById('changeTextButton');
+        const textDiv = document.getElementById('textDiv');
+
+        // Add a click event listener to the button
+        changeTextButton.addEventListener('click', function() {
+            // Change the text content of the div when the button is clicked
+            textDiv.textContent = 'Text has been changed!';
+        });
+    </script>
+</body>
+</html>
